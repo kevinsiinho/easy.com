@@ -1,53 +1,53 @@
 <div class="registro">
 
-    <form class="row g-0">
+    <form class="row g-0 form  needs-validation" novalidate>
       <span class="titulo-registro">Registrate en Easy.com:</span>
       <div class="col-md-4">
-      <label for="validationDefault04" class="form-label">Tipo ID</label>
-      <select class="form-select" id="validationDefault04" required>
+      <label for="tipodId" class="form-label">Tipo ID</label>
+      <select class="form-select" id="tipoId" name="tipoId"  required [(ngModel)]="user.tipoId">
         <option selected disabled value="">Choose...</option>
-        <option>CC</option>
-        <option>Pasaporte</option>
-        <option>CC extranjera</option>
+        <option value="CC">Cédula Ciudadania</option>
+        <option value="Pasaporte">Pasaporte</option>
+        <option value="CC extranjera" >CC extranjera</option>
       </select>
     </div>
       <div class="col-md-4">
-        <label for="validationDefault01" class="form-label">Número de ID</label>
-        <input type="number" class="form-control" id="validationDefault01" placeholder="Identificación" required>
+        <label  class="form-label">Número de ID</label>
+        <input type="number" class="form-control" id="id" name="id"  placeholder="Identificación" [(ngModel)]="user.id" required>
       </div>
         <div class="col-md-8">
-          <label for="validationDefault01" class="form-label">Nombre Completo</label>
-          <input type="text" class="form-control" id="validationDefault01" placeholder="Escribe tu nombre" required>
+          <label form="nombre" class="form-label">Nombre Completo</label>
+          <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Tu nombre completo" [(ngModel)]="user.nombre" required>
         </div>
         <div class="col-md-8">
-          <label for="validationDefaultUsername" class="form-label">Nombre de usuario</label>
+          <label for="usuario" class="form-label">Nombre de usuario</label>
           <div class="input-group">
             <span class="input-group-text" id="inputGroupPrepend2">@</span>
-            <input type="text" class="form-control" id="validationDefaultUsername" placeholder="Escribe un nombre de usuario" aria-describedby="inputGroupPrepend2" required>
+            <input type="text" class="form-control" id="usuario" name="usuario"  placeholder="Escribe un nombre de usuario" [(ngModel)]="user.usuario" required>
           </div>
         </div>
         <div class="col-md-8">
-          <label for="validationDefault01" class="form-label">Email</label>
-          <input type="email" class="form-control" id="validationDefault01" placeholder="Escribe tu correo" required>
+          <label  class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" name="email" placeholder="Escribe tu correo" [(ngModel)]="user.email" required>
         </div>
         <div class="col-md-8">
-          <label for="validationDefault03" class="form-label">Número de celular</label>
-          <input type="number" class="form-control" id="validationDefault03" placeholder="Escribe tu número celular" required>
+          <label class="form-label">Número de celular</label>
+          <input type="number" class="form-control" id="celular" name="celular" placeholder="Escribe tu número celular" [(ngModel)]="user.celular" required>
         </div>
         <div class="col-md-8">
-          <label for="validationDefault01" class="form-label">Contraseña</label>
-          <input type="password" class="form-control" id="validationDefault01"placeholder="Escribe la contraseña" required>
+          <label class="form-label">Contraseña</label>
+          <input type="password" class="form-control" id="password" name="password"  placeholder="Escribe la contraseña" [(ngModel)]="user.password" required>
         </div>
         <div class="col-md-8">
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+            <input class="form-check-input" type="checkbox" required>
             <label class="form-check-label" for="invalidCheck2">
               Aceptar terminos y condiciones
             </label>
           </div>
         </div>
         <div class="col-md-8">
-          <button class="btn btn-primary" type="submit">Registrarme</button>
+          <button class="btn btn-primary" (click)="onSave()">Registrarme</button>
         </div>
       </form>
 </div>

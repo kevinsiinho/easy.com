@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { UsersService } from 'src/app/servicios/users/users.service';
+import { Users } from 'src/app/class/users/users';
+import { Subscription } from 'rxjs'; 
 
 @Component({
   selector: 'app-sala-de-juegos',
@@ -6,10 +9,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sala-de-juegos.component.sass']
 })
 export class SalaDeJuegosComponent implements OnInit {
-
-  constructor() { }
+  usersSubcription:Subscription=new Subscription
+  public user=new Users();
+  constructor(public userService:UsersService) { }
 
   ngOnInit(): void {
+    
   }
 
 }

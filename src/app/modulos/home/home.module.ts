@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
+import { FormsModule } from '@angular/forms';
 import { HomeRoutingModule } from './home-routing.module';
 import { HeaderhomeComponent } from './headerhome/headerhome.component';
 import { HomeComponent } from './home.component';
@@ -17,7 +17,8 @@ import { ListaDinamicaComponent } from './lista-dinamica/lista-dinamica.componen
   ],
   imports: [
     CommonModule,
-    HomeRoutingModule
+    HomeRoutingModule,
+    FormsModule
   ]
 })
 export class HomeModule { }

@@ -1,30 +1,7 @@
 .container
     height: 450px
     margin-top: 10px 
-    table
-        width: 100%
-        background: #298cf0bb
-        border-radius: 12px 12px 12px 12px
-        border: solid 3px black
-        
-        td 
-            height: 80px
-            padding: 3px
-            
-            .card
-                width: 100%
-                height: 100%
-                margin: auto
-                .card-body
-                    height:30%
-                    padding: 0        
-                    h5
-                        font-size: 18px
-                        margin: auto  
-                
-                img
-                    width: 100%
-                    height: 100%
+     
     .info-sala
         height: 100%
         margin-left: -50px
@@ -38,8 +15,52 @@
             label
                 font-weight: bold
              
-.tabla
+.participantes
     margin-left: 280px
     margin-top: -380px
-    max-height: 100%
-    overflow-y: scroll               
+    max-height: 100% 
+
+.carousel-inner
+    display: flex 
+    margin-left: 35px 
+.carousel-item
+    display: block
+    margin-right: 10px
+    flex: 0 0 calc(100%/5)
+
+.tiempo_sorteo
+    display: flex
+    justify-content: center
+    span
+        color: black
+        width: 120px
+        height: 60px
+        margin-right: 10px
+        border-radius: 5px 5px 5px 5px
+        ul
+            margin: auto
+            width: 100%
+            li
+                list-style: none
+                width: 100%
+                margin: auto
+.dia
+    background: #00ff48                
+.horas
+    background: #04d5fa       
+.minutos
+    background: #f66868
+.segundos
+    background: orange
+
+.tiempo
+    font-size: 25px
+    font-weight: bold
+
+.btns
+    background: black
+    width: 50px
+    height: 50px
+    border-radius: 50%
+    top: 50%         
+    

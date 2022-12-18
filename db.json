@@ -1,0 +1,221 @@
+{
+  "user": [
+    {
+      "id": 1148954816,
+      "tipoId": "CC",
+      "nombre": "Kevin Arley Andrades Mondragon",
+      "usuario": "Kevinsiinho",
+      "celular": 3166654540,
+      "email": "Kevinsiinho@gmail.com",
+      "tipocuenta": "Admin",
+      "password": "andrades",
+      "saldo": 1000000,
+      "avatar": "https://i.pravatar.cc/21"
+    },
+    {
+      "tipoId": "CC",
+      "id": 11117964134,
+      "nombre": "Lina Paola Andrades Mina",
+      "usuario": "LinaP",
+      "email": "lina@gmil.com",
+      "celular": 312123432,
+      "password": "klsadjfklads jfaf",
+      "saldo": 0,
+      "tipocuenta": "Normal",
+      "avatar": "https://i.pravatar.cc/23"
+    },
+    {
+      "tipoId": "Pasaporte",
+      "id": 29233987,
+      "nombre": "Sandra Andrades",
+      "usuario": "sandra",
+      "email": "sandra@gamil.com",
+      "celular": 13213123,
+      "password": "salkjsldkfjsd",
+      "saldo": 100000,
+      "tipocuenta": "Normal",
+      "avatar": "https://i.pravatar.cc/5"
+    },
+    {
+      "tipoId": "Pasaporte",
+      "id": 222222222,
+      "nombre": "vivian mina",
+      "usuario": "vm",
+      "email": "vm@gmail.com",
+      "celular": 321233123,
+      "password": "fjsakfladjsf",
+      "saldo": 100000,
+      "tipocuenta": "Normal",
+      "avatar": "assets/img1.jpg"
+    }
+  ],
+  "salas": [
+    {
+      "id": 1,
+      "fecha_sorteo": "2022-11-30T18:00",
+      "disponible": 10,
+      "cantidad": 8,
+      "ganancia": 160000,
+      "fecha": "2022-11-25T20:11:11.091Z",
+      "maximo": 20,
+      "sala": 1,
+      "Ventrada": 20000
+    },
+    {
+      "participanes": [],
+      "sala": 2,
+      "maximo": 10,
+      "Ventrada": 50000,
+      "fecha_sorteo": "2022-11-30T18:00",
+      "disponible": 10,
+      "cantidad": 0,
+      "ganancia": 0,
+      "fecha": "2022-11-25T20:11:11.091Z",
+      "id": 2
+    },
+    {
+      "participanes": [],
+      "sala": 3,
+      "maximo": 15,
+      "Ventrada": 20000,
+      "fecha_sorteo": "2022-11-30T18:00",
+      "disponible": 15,
+      "cantidad": 0,
+      "ganancia": 0,
+      "fecha": "2022-11-25T20:11:32.673Z",
+      "id": 3
+    },
+    {
+      "participanes": [],
+      "sala": 4,
+      "maximo": 30,
+      "Ventrada": 2000,
+      "fecha_sorteo": "2022-11-30T18:00",
+      "disponible": 30,
+      "cantidad": 0,
+      "ganancia": 0,
+      "fecha": "2022-11-25T20:11:41.825Z",
+      "id": 4
+    },
+    {
+      "participanes": [],
+      "sala": 5,
+      "maximo": 30,
+      "Ventrada": 200,
+      "fecha_sorteo": "2022-12-01T22:30",
+      "disponible": 30,
+      "cantidad": 0,
+      "ganancia": 0,
+      "fecha": "2022-11-26T15:27:10.758Z",
+      "id": 5
+    }
+  ],
+  "participantes": [
+    {
+      "sorteo": 1,
+      "usuario": "Kevinsiinho",
+      "avatar": "https://i.pravatar.cc/100",
+      "id_user": 1148954816,
+      "numero": 1
+    },
+    {
+      "sorteo": 1,
+      "usuario": "Alan",
+      "avatar": "https://i.pravatar.cc/300",
+      "id_user": 114854816,
+      "numero": 2
+    },
+    {
+      "sorteo": 1,
+      "usuario": "Jeison",
+      "avatar": "https://i.pravatar.cc/300",
+      "id_user": 114895481,
+      "numero": 3
+    },
+    {
+      "sorteo": 1,
+      "usuario": "Leidy",
+      "avatar": "https://i.pravatar.cc/300",
+      "id_user": 118954816,
+      "numero": 4
+    },
+    {
+      "sorteo": 1,
+      "usuario": "Andres",
+      "avatar": "https://i.pravatar.cc/300",
+      "id_user": 11348954816,
+      "numero": 5
+    },
+    {
+      "sorteo": 1,
+      "usuario": "Marcela",
+      "avatar": "https://i.pravatar.cc/300",
+      "id_user": 11954816,
+      "numero": 6
+    },
+    {
+      "sorteo": 1,
+      "usuario": "Antony",
+      "avatar": "https://i.pravatar.cc/300",
+      "id_user": 113124816,
+      "numero": 7
+    },
+    {
+      "sorteo": 1,
+      "usuario": "Lina",
+      "avatar": "https://i.pravatar.cc/300",
+      "id_user": 114894121312,
+      "numero": 8
+    }
+  ],
+  "login": [
+    {
+      "id": 1148954819,
+      "tipoId": "CC",
+      "nombre": "Kevin Arley Andrades Mondragon",
+      "usuario": "Kevinsiinho",
+      "celular": 3166654540,
+      "email": "Kevinsiinho@gmail.com",
+      "tipocuenta": "Admin",
+      "password": "andrades",
+      "saldo": 1000000,
+      "avatar": "assets/img1.jpg"
+    },
+    {
+      "usuario": "Kevinsiinho",
+      "password": "andrades",
+      "id": 1148954820
+    },
+    {
+      "usuario": "Kevinsiinho",
+      "password": "andrades",
+      "id": 1148954821
+    },
+    {
+      "usuario": "Kevinsiinho",
+      "password": "andrades",
+      "id": 1148954822
+    },
+    {
+      "usuario": "Kevinsiinho",
+      "password": "andrades",
+      "id": 1148954823
+    },
+    {
+      "usuario": "Kevinsiinho",
+      "password": "andrades",
+      "id": 1148954824
+    }
+  ],
+  "ganadores": [
+    {
+      "sorteo": 1000,
+      "avatar": "https://i.pravatar.cc/300",
+      "id_user": 114894816,
+      "usuario": "Kevinsiinho",
+      "fecha": "2022-11-25T20:11:11.091Z",
+      "numero": 1,
+      "id": 1
+    }
+  ]
+}

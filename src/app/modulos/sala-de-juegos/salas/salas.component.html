@@ -1,65 +1,37 @@
 
 <div class="container">
   <h2>Salas disponibles</h2>
-    <table class="table table-striped">
-        <thead class="table-primary">
-            <tr>
-               <th scope="col">Sala</th>
-               <th scope="col">Valor entrada</th>
-               <th scope="col">Disponible</th>
-               <th scope="col">Participantes</th>
-               <th scope="col">Maximo</th>
-               <th scope="col">Editar</th>
-               <th scope="col">Eliminar</th>
-            </tr>
-         </thead>
-         <tbody class="table-group-divider">
-            <tr>
-                <td><a href="">Sala 1</a></td>
-                <td><span>$</span>1000</td>
-                <td>10</td>
-                <td>10</td>
-                <td>20</td>
-                <td><a [routerLink]="['/salas/editar-sala']" class="eliminar btn btn-success">Y</a></td>
-                <td><button class="eliminar btn btn-danger">X</button></td>
-            </tr> 
-            <tr>
-                <td><a [routerLink]="['/salas/sala']">Sala 2</a></td>
-                <td><button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal"><span>$</span>1000</button></td>
-                <td>20</td>
-                <td>20</td>
-                <td>40</td>
-                <td><a [routerLink]="['/salas/editar-sala']" class="eliminar btn btn-success">Y</a></td>
-                <td><button class="eliminar btn btn-danger">X</button></td>
-            </tr>    
-        </tbody>
-    </table>
-
-    <!-- Button trigger modal -->
-
+    
   
-  <!-- Modal -->
-  <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Formulario de entrada</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+<div id="carouselExampleControls" class="carousel slide" >
+  <div class="carousel-inner">
+    <!--Comienzo-->
+    <div *ngFor="let item of salas" class="carousel-item active" >
+      <div class="card btn btn-primary" style="width: 18rem;">
+        <div class="card-header">
+          <a [routerLink]="['/salas/sala/',item.id]"><span>Sala</span>{{item.sala}} <i class="bi bi-eye-fill"></i></a>
         </div>
-        <div class="modal-body">
-          <form action="">  
-          <span>Identificación:</span><div>11312321</div>
-          <span>Usuario:</span><div>Kevinsiinho</div>
-          <span>Valor sala:</span><div><span>$</span>1000</div>
-        </form>
-        </div>
-        
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-          <button type="button" class="btn btn-primary">Comprar</button>
-        </div>
-      </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><span>Sorteo #</span>{{item.id}}</li>
+          <li class="list-group-item"><span>Disponible:</span>{{item.disponible}}</li>
+          <li class="list-group-item"><span>Participantes:</span>{{item.cantidad}}</li>
+          <li class="list-group-item"> <span>Maximo:</span>{{item.maximo}}</li>
+          <li class="list-group-item"><span>Comprar:</span><button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal"><span>$</span>{{item.Ventrada}}</button></li>
+          <li class="list-group-item"><a [routerLink]="['/salas/editar-sala/',item.id]" class="eliminar btn btn-success">Editar <i class="bi bi-pencil-square"></i></a> <span>----</span>  <button class="eliminar btn btn-danger" (click)="onDelete(item.id || 0)">Eliminar <i class="bi bi-x-square"></i></button></li>
+          <li class="list-group-item"></li>
+        </ul>
+      </div> 
     </div>
+    <!--fin-->
+
+  </div>
+  <button (click)="izquierda()" class="carousel-control-prev btns" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button (click)="derecha()" class="carousel-control-next btns" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
   </div>
 </div>
-

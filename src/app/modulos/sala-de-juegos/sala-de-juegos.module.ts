@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
+import { FormsModule } from '@angular/forms';
 import { SalaDeJuegosRoutingModule } from './sala-de-juegos-routing.module';
 import { SalaDeJuegosComponent } from './sala-de-juegos.component';
 import { HeaderusuarioComponent } from './headerusuario/headerusuario.component';
@@ -13,6 +13,7 @@ import { EditarComponent } from './editar/editar.component';
 import { SalasComponent } from './salas/salas.component';
 import { CrearsalaComponent } from './crearsala/crearsala.component';
 import { EditarsalaComponent } from './editarsala/editarsala.component';
+import { ListadoUserComponent } from './listado-user/listado-user.component';
 
 
 @NgModule({
@@ -27,11 +28,13 @@ import { EditarsalaComponent } from './editarsala/editarsala.component';
     EditarComponent,
     SalasComponent,
     CrearsalaComponent,
-    EditarsalaComponent
+    EditarsalaComponent,
+    ListadoUserComponent
   ],
   imports: [
     CommonModule,
-    SalaDeJuegosRoutingModule
+    SalaDeJuegosRoutingModule,
+    FormsModule
   ]
 })
 export class SalaDeJuegosModule { }
